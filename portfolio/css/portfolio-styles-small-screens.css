@@ -1,0 +1,41 @@
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+	.portfolio-wrapper {
+		flex-flow: wrap column;
+	}
+
+	.portfolio-projects {
+		margin: 15px 0px;
+		top: auto;
+		display: inline-block;
+		/*display: block;*/
+		height: auto;
+		width: auto;
+	}
+
+	.portfolio-item {
+		/*margin: auto;*/
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 750px) and (orientation: landscape) {
+	li {
+		font-size: 1em;
+	}
+
+	.portfolio-wrapper {
+		flex-flow: wrap column;
+	}
+
+	.portfolio-categories {
+		margin: 0px auto;
+	}
+
+	.portfolio-projects {
+		top: 250px;
+	}
+
+	.portfolio-item {
+		width: 290px;
+		margin: 5px
+	}
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Portfolio and Selected Works of Aidan Bauer</title>
+		<meta name="keywords" content="aidan bauer, portfolio, design">
+		<meta name="description" content="I am Aidan Bauer, a programmer, designer and artist. Here are the things I've done and skills I know.">
+		<link rel="icon" href="media/portfolio_famicom.png">
+		<!-- You can use Open Graph tags to customize link previews.
+	    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+		<meta property="og:url"           content="http://www.aidanjbauer.com" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:title"         content="The Portfolio and Selected Works of Aidan Bauer" />
+		<meta property="og:description"   content="I am Aidan Bauer, a programmer, designer and artist. Here are the things I've done and skills I know." />
+		<meta property="og:image"         content="media/portfolio_famicom.png" />
+
+		<link rel="stylesheet" type="text/css" href="css/global-styles.css">
+		<link rel="stylesheet" type="text/css" href="css/medium-device-styles.css">
+		<link rel="stylesheet" type="text/css" href="css/small-device-styles.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!--<script src="js/lib/jquery.smoothState.min.js"></script>-->
+		<script src="js/main-menu.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var menuItems = $(".menu-item");
+				var width = menuItems.width();
+				menuItems.height(width*0.8575);
+
+				$(".overlay-content").hover(function() {
+					console.log("hovered");
+				});
+			});
+		</script>
+
+		<style type="text/css">
+			@keyframes fadeInDown {
+				0% {
+					-webkit-transform: translate3d(0, -100%, 0);
+					transform: translate3d(0, -100%, 0);
+				}
+
+				100% {
+					-webkit-transform: none;
+					transform: none;
+				}
+			}
+
+			/*set the animations*/
+			.container {
+				-webkit-animation-name: fadeInDown;
+				animation-name: fadeInDown;
+				-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+
+			/*&.is-exiting {
+				.container {
+					animation-direction: alternate-reverse;
+				}
+			}*/
+
+			/*just for this page*/
+			body {
+				overflow: hidden;
+			}
+
+			/*undoing that for mobil versions*/
+			@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait), only screen and (min-width: 480px) and (max-width: 750px) and (orientation: landscape), only screen and (min-width: 750px) and (max-width: 1200px) and (orientation: portrait) {
+				body {
+					overflow: scroll;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!--<div id="main"></div>-->
+		<div class="container" id="main">
+			<div class="body">
+				<div class="menu-row">
+					<div class="menu-item hexagon">
+						<div class="header-content centered">
+							<p>The Portfolio and Selected Works</p>
+							<p>of</p>
+							<p>Aidan Bauer</p>
+						</div>
+					</div>
+				</div>
+				<!--end menu row 1-->
+				<div class="menu-row">
+					<a href="about/about.html" class="menu-item hexagon">
+						<div id="about" class="blurred"></div>
+						<div class="overlay">
+							<div class="overlay-content centered">About</div>
+						</div>
+					</a>
+					<a href="portfolio/portfolio.html" id="portfolio" class="menu-item hexagon">
+						<div id="portfolio" class="blurred"></div>
+						<div class="overlay">
+							<div class="overlay-content centered">Portfolio</div>
+						</div>
+					</a>
+				</div>
+				<!--end menu row 2-->
+				<div class="menu-row">
+					<a href="contact/contact.html" id="contact" class="menu-item hexagon">
+						<div id="contact" class="blurred"></div>
+						<div class="overlay">
+							<div class="overlay-content centered">Contact</div>
+						</div>
+					</a>
+				</div>
+				<!--end menu row 3-->
+			</div>
+		</div>
+
+		<svg class="clip-svg">
+			<defs>
+				<clipPath id="clip-hexagon" clipPathUnits="objectBoundingBox">
+					<polygon points="0.25 0, 0.75 0, 1.0 0.5,
+				0.75 1.0, 0.25 1.0, 0 0.5"/>
+				</clipPath>
+			</defs>
+		</svg>
+
+		<!--<script src="js/init_smooth.js"></script>-->
+	</body>
+</html>

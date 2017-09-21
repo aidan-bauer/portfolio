@@ -1,0 +1,98 @@
+/* Styles */
+/*portrait*/
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+	body {
+		overflow: scroll;
+	}
+
+	input[type=text] {
+		width: 70%;
+	}
+
+	.header {
+		width: 100%;
+		padding: 0;
+	}
+
+	.header a {
+		width: 90%;
+		height: 60px;
+		line-height: 60px;
+		padding: 5px 15px;
+	}
+
+	.header-content {
+		font-size: 0.3em;
+	}
+
+	.header-content p {
+		margin: 5px 0px;
+	}
+
+	.container {
+		text-align: center;
+		overflow: scroll;
+	}
+
+	.body {
+		margin: 20px 0;
+	}
+
+	.footer {
+		font-size: 0.35em;
+	}
+
+	.back-button, .share-buttons {
+		width: 45%;
+	}
+
+	.menu-item {
+		width: 95%;
+		display: inline-block;
+	}
+
+	.overlay-content {
+		font-size: 0.75em;
+	}
+
+	.button {
+		font-size: 0.5em;
+		line-height: 0.5em;
+		padding: 15px 15px;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 750px) and (orientation: landscape) {
+	body {
+		overflow: scroll;
+	}
+	
+	input[type=text] {
+		width: 45%;
+	}
+
+	.menu-item {
+		margin: auto;
+	}
+
+	.button {
+		font-size: 0.65em;
+		line-height: 0.65em;
+		padding: 20px 20px;
+	}
+
+	.header a {
+		min-width: 25%;
+		margin: 0px -45px;
+	}
+
+	.header a:nth-of-type(even) {
+		margin: 45px 0 0 0;
+	}
+}
+
+/*.header {
+	width: 100%;
+	padding: 0;
+}*/
+

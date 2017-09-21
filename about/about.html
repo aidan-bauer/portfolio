@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>About Aidan Bauer</title>
+		<link rel="icon" href="../media/portfolio_famicom.png">
+
+		<link rel="stylesheet" type="text/css" href="../css/global-styles.css">
+		<link rel="stylesheet" type="text/css" href="../css/medium-device-styles.css">
+		<link rel="stylesheet" type="text/css" href="../css/small-device-styles.css">
+
+		<style type="text/css">
+			.container {
+				position: relative;
+			}
+
+			.about {
+				margin: auto;
+				left: 0;
+				top: 0;
+				background: #f2f2f2;
+				width: 80%;
+			}
+
+			.about-header {
+				font-weight: bold;
+			}
+
+			.about-body {
+				font-size: 0.35em;
+				text-align: left;
+				padding: 0px 20px;
+				padding-bottom: 15px;
+			}
+
+			.about-body:nth-of-type(2) {
+				text-indent: 0px;
+			}
+
+			.about-body p {
+				font-size: 1.15em;
+				font-weight: bold;
+				display: inline;
+			}
+
+			.about-body ul {
+				width: 600px;
+				overflow: hidden;
+			}
+
+			.double-column li {
+				text-indent: 10px;	/*move the indent back*/
+				list-style: none;
+				float: left;
+				margin: 2px 2px;
+				/*width: 47%;*/
+				width: 47%;
+				height: 30px;
+				text-align: center;
+				/*line-height: 1.5em;*/
+				line-height: 30px;
+				border-radius: 5px;
+			}
+
+			/*set the color of the lists*/
+			.about-body:nth-of-type(2) ul:first-of-type li {
+				background: #ffffb3;
+			}
+
+			.about-body:nth-of-type(2) ul:nth-of-type(2) li {
+				background: #b3ffb3;
+			}
+
+			.about-body:nth-of-type(2) ul:nth-of-type(3) li {
+				background: #b3d9ff;
+			}
+
+			.about-body:nth-of-type(3) ul {
+				list-style: circle;
+			}
+
+			.about-body:nth-of-type(4) ul {
+				list-style: square;
+			}
+
+			/*@media only screen and (min-width: 635px) {
+				/* Styles */
+				.about-body ul {
+					width: 600px;
+				}
+				.double-column li {
+					width: 47%;
+				}
+			}*/
+		</style>
+
+		<!-- styles for phones -->
+		<style type="text/css" media="only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)">
+			.about-body {
+				font-size: 0.3em;
+			}
+
+			.about {
+				width: 95%;
+			}
+
+			.about-body ul {
+				padding: 0 0 0 0;
+				margin: 10px auto;
+				width: 80%;
+				overflow: hidden;
+			}
+
+			.double-column li {
+				width: 97%;
+				/*line-height: 0.3em;*/
+			}
+		</style>
+
+		<style type="text/css" media="only screen and (min-width: 750px) and (max-width: 1200px) and (orientation: landscape)">
+			.about-body ul {
+				padding: 0 0 0 0;
+				margin: 10px auto;
+				width: 80%;
+			}
+		</style>
+
+		<style type="text/css" media="only screen and (min-width: 750px) and (max-width: 1200px) and (orientation: portrait)">
+			.about-body ul {
+				padding: 0 0 0 0;
+				margin: 10px auto;
+				width: 90%;
+			}
+		</style>
+
+		<!--Animations and keyframes-->
+		<style type="text/css">
+			@keyframes fadeInLeft {
+				0% {
+					-webkit-transform: translate3d(-100%, 0, 0);
+					transform: translate3d(-100%, 0, 0);
+				}
+
+				100% {
+					-webkit-transform: none;
+					transform: none;
+				}
+			}
+
+			/*set the animations*/
+			.container {
+				-webkit-animation-name: fadeInLeft;
+				animation-name: fadeInLeft;
+				-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+
+			/*&.is-exiting {
+				.container {
+					animation-direction: alternate-reverse;
+				}
+			}*/
+		</style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../js/header-menu.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<a href="/">Home</a>
+				<a href="../portfolio/portfolio.html">Portfolio</a>
+				<a href="../contact/contact.html">Contact</a>
+			</div>
+			<div class="body">
+				<div class="about">
+					<h1>About Me</h1>
+					<img src="media/BauerAidan_S3_C1.jpg" width="512">
+					<div class="about-body">
+						<p>I am a designer, programmer, and artist</p> located in Portland, CT. I graduated in 2017 with a BA cum laude in New Media from the University of Maine with extensive experience in game design and development, video editing, and web design. Some highlights from my time in New Media are programming Phytobuddies, an app that teaches children about the environment with phytoplankton. I also designed and programmed Escape: A Roguelite Stealth Experince, my capstone project that was selected for exhibition at the 2017 UMaine Student Symposium.
+					</div>
+					<h1>Skills</h1>
+					<div class="about-body">
+						<!-- <h3>Skills</h3> -->
+						Programming Lanuages:
+						<ul class="double-column">
+							<li>C#</li>
+							<li>Javascript</li>
+						</ul>
+						Programs:
+						<ul class="double-column">
+							<li>Photoshop</li>
+							<li>Illustrator</li>
+							<li>Indesign</li>
+							<li>Premiere</li>
+							<li>After Effects</li>
+							<li>Unity</li>
+						</ul>
+						Web design:
+						<ul class="double-column">
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Wordpress</li>
+						</ul>
+					</div>
+					<h1>Experience</h1>
+					<div class="about-body">
+						<ul>
+							<li><strong>Coaction Lab</strong>, Developer Intern, February 2016 to present</li>
+							<li><strong>Collins Center for the Arts</strong>, Marketing Intern, October 2016 to May 2017</li>
+						</ul>
+					</div>
+					<h1>Education</h1>
+					<div class="about-body">
+						<ul>
+							<li><strong>BA (Cum Laude)</strong> in New Media at University of Maine, August 2013 - May 2017</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

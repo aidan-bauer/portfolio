@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact Me</title>
+		<link rel="icon" href="../media/portfolio_famicom.png">
+
+		<link rel="stylesheet" type="text/css" href="../css/global-styles.css">
+		<link rel="stylesheet" type="text/css" href="../css/medium-device-styles.css">
+		<link rel="stylesheet" type="text/css" href="../css/small-device-styles.css">
+
+		<!--Page-spectific styles-->
+		<style type="text/css">
+			.contact {
+				margin: auto;
+				left: 0;
+				top: 0;
+				background: #f2f2f2;
+				width: 95%;
+			}
+
+			.contact-header {
+				font-weight: bold;
+			}
+
+			.contact-body{
+				font-size: 0.35em;
+				/*line-height: 1.25;*/
+				text-align: left;
+				text-indent: 40px;
+				padding: 0px 20px;
+				padding-bottom: 15px;
+			}
+
+			.form-header {
+				text-align: center;
+				text-indent: 0;
+				font-size: 2em;
+				font-weight: bold;
+			}
+
+			form {
+				text-indent: 0;
+				text-align: center;
+				font-size: 1.5em;
+				line-height: 1.5em;
+			}
+
+			textarea {
+				resize: none;
+			}
+
+			.soc-links {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: flex-start;
+				margin: auto;
+				position: relative;
+				text-indent: 0;
+			}
+
+			.soc-links a {
+				width: 300px;
+				margin: 0px 30px;
+				text-align: center;
+				display: inline-block;
+				color: #004368;
+
+				transition: all 0.5s;
+			}
+
+			.soc-links a:hover {
+				text-decoration: none;
+
+				-webkit-filter: saturate(0.25);
+				filter: saturate(0.25);
+			}
+		</style>
+
+		<style type="text/css" media="only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)">
+			textarea {
+				width: 95%;
+			}
+		</style>
+
+		<style type="text/css" media="only screen and (min-width: 480px) and (max-width: 750px) and (orientation: landscape)">
+			textarea {
+				width: 95%;
+			}
+		</style>
+
+		<!--Animations and keyframes-->
+		<style type="text/css">
+			@keyframes fadeInUp {
+				0% {
+					-webkit-transform: translate3d(0, 100%, 0);
+					transform: translate3d(0, 100%, 0);
+				}
+
+				100% {
+					-webkit-transform: none;
+					transform: none;
+				}
+			}
+
+			/*set the animations*/
+			.container {
+				-webkit-animation-name: fadeInUp;
+				animation-name: fadeInUp;
+				-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+
+			/*&.is-exiting {
+				.container {
+					animation-direction: alternate-reverse;
+				}
+			}*/
+		</style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../js/header-menu.js"></script>
+		<!--<script type="text/javascript">
+			$(document).ready(function() {
+				$("a:has(figure)").addClass();
+			});
+		</script>-->
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<a href="/">Home</a>
+				<a href="../about/about.html">About</a>
+				<a href="../portfolio/portfolio.html">Porfolio</a>
+			</div>
+			<div class="body">
+				<div class="contact">
+					<h1>Contact Me</h1>
+					<div class="contact-body">
+						If you wish to contact me about work, are interested in hiring me, or have questions about any of the items in my portfolio, you can contact me via email or social media.
+					</div>
+					<div class="contact-body">
+						<div class="soc-links">
+							<a href="mailto:aidanjbauer94@gmail.com" target="blank" title="aidanjbauer94@gmail.com">
+								<div><img src="media/email_image.png"></div>
+								<div>aidanjbauer94@gmail.com</div>
+							</a>
+							<a href="https://www.facebook.com/TheWorksOfAidanBauer/" target="blank" title="fb/Aidan Bauer">
+								<div><img src="media/facebook_image.png"></div>
+								<div>The Works of Aidan Bauer</div>
+							</a>
+							<a href="https://twitter.com/aidanjbauer" target="blank" title="@aidanjbauer">
+								<div><img src="media/twitter_image.png"></div>
+								<div>@aidanjbauer</div>
+							</a>
+							<a href="https://www.linkedin.com/in/aidan-bauer-04a390101" target="blank" title="in/Aidan Bauer">
+								<div><img src="media/linkedin_image.png"></div>
+								<div>Aidan Bauer</div>
+							</a>
+						</div>
+						<!-- <div class="form-header">Send Me an Email</div>
+						<form action="mailto:aidanjbauer94@gmail.com" method="post" enctype="text/plain">
+							Name:<br>
+							<input type="text" name="name" required><br>
+							E-mail:<br>
+							<input type="text" name="mail" required><br>
+							Message:<br>
+							<textarea name="body" rows="10" cols="100" wrap="hard" required></textarea><br>
+							<input class="button" type="submit" value="Send">
+							<input class="button" type="reset" value="Reset">
+						</form> -->
+						<!--<div class="separator-dotted"></div>
+						<div class="contact-body">My Social Media</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+/*only use styles if screen is in portrait mode*/
+@media only screen and (min-width: 750px) and (max-width: 1200px) and (orientation: portrait) {
+	.header-content {
+		font-size: 0.6em;
+	}
+
+	.menu-item {
+		width: 80%;
+		margin: auto;
+	}
+
+	.overlay-content {
+		font-size: 1.65em;
+	}
+
+	/*.footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}*/
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1200px) and (orientation: landscape) {
+	.header-content {
+		font-size: 0.35em;
+	}
+
+	.menu-row {
+		margin-top: -165px;
+	}
+
+	.menu-row:first-of-type {
+		margin-top: auto;
+	}
+
+	.menu-item {
+		display: inline-block;
+		width: 350px;
+	}
+
+	.menu-row:nth-of-type(2) .menu-item:nth-of-type(odd) {
+		margin: 0 120px 0 0;
+	}
+
+	.menu-row:nth-of-type(2) .menu-item:nth-of-type(even) {
+		margin: 0 0 0 120px;
+	}
+}

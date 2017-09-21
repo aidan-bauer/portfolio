@@ -1,0 +1,74 @@
+/*body tags*/
+.project-wrapper {
+	margin: auto;
+	/*margin: 0px auto 15px;*/
+	left: 0;
+	top: 0;
+	background: #f2f2f2;
+	width: 90%;
+}
+
+.project-header {
+	font-weight: bold;
+	font-size: 0.75em;
+	padding-top: 15px;
+}
+
+.project-subheader {
+	font-size: 0.55em;
+	margin-bottom: 15px;
+}
+
+.project-body {
+	font-size: 0.35em;
+	text-align: left;
+	text-indent: 40px;
+	padding: 10px 20px;
+}
+
+/*footer styles*/
+.back-button {
+	height: inherit;
+}
+
+.back-button a {
+	display: block;
+	padding: 20px 15px;
+
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.back-button a:hover {
+	text-decoration: none;
+	background: #8c8c8c;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	iframe {
+		width: 100%;
+		height: 56%;
+	}
+
+	.project-header {
+		font-size: 0.65em;
+	}
+
+	.project-subheader {
+		font-size: 0.45em;
+	}
+
+	.project-body {
+		font-size: 0.3em;
+		text-indent: 30px;
+		/*padding: 10px 0px;*/
+	}
+
+	.back-button a {
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 120px;
+		padding: 5px 0px;
+	}
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Porfolio</title>
+		<meta name="author" content="Aidan Bauer">
+		<meta name="keywords" content="aidan bauer, portfolio, design, code, art">
+		<link rel="icon" href="http://www.aidanjbauer.com/media/portfolio_famicom.png">
+
+		<link rel="stylesheet" type="text/css" href="../css/global-styles.css">
+		<link rel="stylesheet" type="text/css" href="../css/medium-device-styles.css">
+		<link rel="stylesheet" type="text/css" href="../css/small-device-styles.css">
+		<link rel="stylesheet" type="text/css" href="css/portfolio-styles.css">
+		<link rel="stylesheet" type="text/css" href="css/portfolio-styles-small-screens.css">
+
+		<!--Animations and keyframes-->
+		<style type="text/css">
+			@keyframes fadeInRight {
+				0% {
+					-webkit-transform: translate3d(100%, 0, 0);
+					transform: translate3d(100%, 0, 0);
+				}
+
+				100% {
+					-webkit-transform: none;
+					transform: none;
+				}
+			}
+
+			/*set the animations*/
+			.container {
+				-webkit-animation-name: fadeInRight;
+				animation-name: fadeInRight;
+				-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+
+			/*&.is-exiting {
+				.container {
+					animation-direction: alternate-reverse;
+				}
+			}*/
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../js/header-menu.js"></script>
+		<script src="js/project_filter.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var menuItems = $(".portfolio-item");
+				var width = menuItems.width();
+				menuItems.height(width*0.8575);
+			});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<a href="/">Home</a>
+				<a href="../about/about.html">About</a>
+				<a href="../contact/contact.html">Contact</a>
+			</div>
+			<div class="body">
+				<div class="portfolio-wrapper wrapper">
+					<div>
+						<div class="background-white portfolio-categories">
+							<ul>
+								<li><div data-project-filter="all">All</div></li>
+								<li><div data-project-filter="art">Art</div></li>
+								<li><div data-project-filter="code">Code</div></li>
+								<!-- <li><div data-project-filter="design">Design</div></li> -->
+								<li><div data-project-filter="video">Video</div></li>
+								<li><div data-project-filter="games">Games</div></li>
+							</ul>
+						</div>
+					</div>
+					<!--end portfolio-categories-->
+					<div class="background-white portfolio-projects">
+						<a href="projects/20170504_escape.html" class="portfolio-item" data-project-type="games">
+							<div id="p07" class="shape-1">
+								<div class="item-text-background hexagon">
+									<div class="text-wrapper">
+										<h2>Escape</h2>
+										<h3>A Roguelite Stealth Experience</h3>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="projects/20160507_time_based_2_final.html" class="portfolio-item" data-project-type="video">
+							<div id="p06" class="shape-2">
+								<div class="item-text-background hexagon">
+									<div class="text-wrapper">
+										<h2>MR-637P1 demo</h2>
+										<h3>Fake Commercial</h3>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="projects/20160413_time_based_2_lazarus.html" class="portfolio-item" data-project-type="video">
+							<div id="p05" class="shape-3">
+								<div class="item-text-background hexagon">
+									<div class="text-wrapper">
+										<h2>Lazarus</h2>
+										<h3>A narrative through digital paintings</h3>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="projects/20151209_drawing_2_final.html" class="portfolio-item" data-project-type="art">
+							<div id="p04" class="shape-1">
+								<div class="item-text-background hexagon">
+									<div class="text-wrapper">
+										<h2>J'accuse</h2>
+										<h3>Charcoal, pastel and acrylic on paper</h3>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="projects/20151208_2d_design_final.html" class="portfolio-item" data-project-type="art">
+							<div id="p03" class="shape-2">
+								<div class="item-text-background hexagon">
+									<div class="text-wrapper">
+										<h2>Windows</h2>
+										<h3>Acrylic on canvas</h3>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="projects/20151021_2d_design_grid_pattern.html" class="portfolio-item" data-project-type="art">
+							<div id="p02" class="shape-3">
+								<div class="item-text-background hexagon">
+									<div class="text-wrapper">
+										<h2>Grid Patterns</h2>
+										<h3>Acrylic on paper</h3>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="projects/20141030_black_box.html" class="portfolio-item" data-project-type="code">
+							<div id="p01" class="shape-1">
+								<div class="item-text-background hexagon">
+									<div class="text-wrapper">
+										<h2>Black Box</h2>
+										<h3>Interactive found footage</h3>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!--end portfolio-projects-->
+				</div>
+			</div>
+		</div>
+		<!--clip path hexagon-->
+		<svg class="clip-svg">
+			<defs>
+				<clipPath id="clip-hexagon" clipPathUnits="objectBoundingBox">
+					<polygon points="0.25 0.03, 0.75 0.03, 0.97 0.5, 0.97 0.5,
+				0.75 0.97, 0.25 0.97, 0.03 0.5, 0.03 0.5"/>
+				</clipPath>
+			</defs>
+		</svg>
+		<!--clip path square-->
+		<svg class="clip-svg">
+			<defs>
+				<clipPath id="clip-square" clipPathUnits="objectBoundingBox">
+					<polygon points="0.10 0.10, 0.9 0.1, 0.9 0.9, 0.1 0.9"/>
+				</clipPath>
+			</defs>
+		</svg>
+		<!--clip path diamond-->
+		<svg class="clip-svg">
+			<defs>
+				<clipPath id="clip-diamond" clipPathUnits="objectBoundingBox">
+					<polygon points="0.50 0.0, 1.0 0.5, 0.5 1.0, 0.0 0.5"/>
+				</clipPath>
+			</defs>
+		</svg>
+	</body>
+</html>

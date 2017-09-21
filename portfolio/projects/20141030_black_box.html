@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Black Box</title>
+		<meta name="author" content="Aidan Bauer">
+		<meta name="keywords" content="aidan bauer, black box, interactive narrative">
+		<meta name="description" content="I created Black Box as a project for a Digital Narrative class in school. I wanted to tell a found-footage story in a new and unique style by replacing the camera with a computer terminal. To uncover the truth about what happened, you have to look through every section and leave no stone unturned.">
+		<link rel="icon" href="http://www.aidanjbauer.com/media/portfolio_famicom.png">
+
+		<meta property="og:url"           content="http://www.aidanjbauer.com/portfolio/projects/20141030_black_box.html" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:title"         content="Black Box" />
+		<meta property="og:description"   content="I created Black Box as a project for a Digital Narrative class in school. I wanted to tell a found-footage story in a new and unique style by replacing the camera with a computer terminal." />
+		<meta property="og:image"         content="http://www.aidanjbauer.com/portfolio/media/black_box_2.jpg" />
+
+		<link rel="stylesheet" type="text/css" href="../../css/slideshow.css">
+		<link rel="stylesheet" type="text/css" href="../../css/global-styles.css">
+		<link rel="stylesheet" type="text/css" href="../../css/medium-device-styles.css">
+		<link rel="stylesheet" type="text/css" href="../../css/small-device-styles.css">
+		<link rel="stylesheet" type="text/css" href="css/portfolio-projects.css">
+		<!-- Animations -->
+		<style>
+			@keyframes fadeInRight {
+				0% {
+					-webkit-transform: translate3d(100%, 0, 0);
+					transform: translate3d(100%, 0, 0);
+				}
+
+				100% {
+					-webkit-transform: none;
+					transform: none;
+				}
+			}
+
+			/*set the animations*/
+			.container {
+				-webkit-animation-name: fadeInRight;
+				animation-name: fadeInRight;
+				-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+		</style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!--<script src="../../js/lib/jquery.smoothState.min.js"></script>-->
+		<script src="../../js/header-menu.js"></script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!-- twitter for websites -->
+		<script>
+			window.twttr = (function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0],
+			t = window.twttr || {};
+			if (d.getElementById(id)) return t;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https://platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore(js, fjs);
+
+			t._e = [];
+			t.ready = function(f) {
+			t._e.push(f);
+			};
+
+			return t;
+			}(document, "script", "twitter-wjs"));
+		</script>
+		<div class="container">
+			<div class="header">
+				<a class="hexagon" href="/">Home</a>
+				<a class="hexagon" href="../../about/about.html">About</a>
+				<a class="hexagon" href="../../contact/contact.html">Contact</a>
+			</div>
+			<div class="body">
+				<div class="project-wrapper">
+					<h2>Black Box</h2>
+					<h3>Interactive Found Footage</h3>
+					<!-- text describing the project -->
+					<div class="project-body">I created Black Box as a project for a Digital Narrative class in school. I wanted to tell a found-footage story in a new and unique style by replacing the camera with a computer terminal. To uncover the truth about what happened, you have to look through every section and leave no stone unturned.</div>
+					<div class="project-body">It is the year 2258. Humanity has left the cradle of Earth and begun to explore the solar system and beyond. Settlements and colonies have started on the Moon, Mars, and the moons of Jupiter and Saturn, and humanity’s gaze is ever outward and ever upward.</div>
+					<div class="project-body">You are a computer forensics expert for the United Nations Interstellar Travel Agency, the governing body that regulates space travel. One day, a ship shows up with a black box from an unknown ship. It was found floating in space, with no ship in sight. It is your job to determine what happened to the ship the black box came from based on the information it contains.</div>
+					<div class="project-body"><a href="" target="_blank" title="Black Box">Click here to play.</a></div>
+					<!-- video or image of the project -->
+					<div class="slideshow-container">
+						<div class="slide fade">
+							<div class="slide-number">1 / 3</div>
+							<a href="../media/black_box_1.jpg" target="_blank" title="Title Screen">
+								<img src="../media/black_box_1.jpg">
+							</a>
+							<div class="caption">Title Screen</div>
+						</div>
+						<div class="slide fade">
+							<div class="slide-number">2 / 3</div>
+							<a href="../media/black_box_2.jpg" target="_blank" title="Ship Information Screen">
+								<img src="../media/black_box_2.jpg">
+							</a>
+							<div class="caption">Ship Information Screen</div>
+						</div>
+						<div class="slide fade">
+							<div class="slide-number">3 / 3</div>
+							<a href="../media/black_box_3.jpg" target="_blank" title="Data Storage Screen">
+								<img src="../media/black_box_3.jpg">
+							</a>
+							<div class="caption">Data Storage Screen</div>
+						</div>
+
+						<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+						<a class="next" onclick="changeSlide(1)">&#10095;</a>
+					</div>
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+					</div>
+					<div class="project-body">- Aidan Bauer</div>
+				</div>
+				<div class="background-white footer">
+					<div class="back-button">
+						<a href="../portfolio.html">&larr; Back to porfolio</a>
+					</div>
+					<div class="share-buttons">
+						<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.aidanjbauer.com%2Fportfolio%2Fprojects%2F20141030_black_box.html&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+						<a class="twitter-share-button"
+						href="https://twitter.com/intent/tweet"
+						data-size="large"
+						data-text="Black Box, an interactive found footage story"
+						data-url="http://www.aidanjbauer.com/portfolio/projects/20141030_black_box.html">Tweet</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/slideshow.js"></script>
+	</body>
+</html>
