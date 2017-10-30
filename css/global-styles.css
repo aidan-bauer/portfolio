@@ -9,7 +9,7 @@ html {
 }
 
 body {
-	background: #A1D0E5 url("../media/web-background.png") center repeat fixed;
+	background: #cbdee6 /*url("../media/web-background.png")*/ center repeat fixed;
 	margin: 0;
 	border: 1px solid transparent;
 	padding: 0;
@@ -239,7 +239,7 @@ a:link:active, a:visited:active {
 	text-transform: uppercase;
 	color: rgba(225, 225, 225, 0.8);
 	text-shadow: 1px 1px 2px rgba(50, 50, 50, 0.1);
-	
+
 	-webkit-filter: blur(5px);
 	filter: blur(5px);
 
