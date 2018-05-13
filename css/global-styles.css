@@ -305,6 +305,7 @@ hr.separator-dotted {
 		75% 100%, 25% 100%, 0% 50%);
 	clip-path: polygon(25% 0%, 75% 0%, 100% 50%,
 		75% 100%, 25% 100%, 0% 50%);
+	-webkit-clip-path: url("#clip-hexagon");
 	clip-path: url("#clip-hexagon");
 }
 
