@@ -78,6 +78,11 @@ a:link:active, a:visited:active {
 }
 
 .blurred {
+    /*margin: -5px;*/
+    overflow: hidden;
+    -webkit-overflow: hidden;
+    -moz-overflow: hidden;
+    
 	-webkit-filter: blur(5px);
 	filter: blur(5px);
 
@@ -192,6 +197,12 @@ a:link:active, a:visited:active {
 	text-align: right;
 }
 
+.menu-row {
+    overflow: auto;
+    -webkit-overflow: auto;
+    -moz-overflow: auto;
+}
+
 .menu-item {
 	margin: auto;
 	background: rgb(0, 107, 179);
@@ -200,6 +211,9 @@ a:link:active, a:visited:active {
 	width: 400px;
 	height: 343px;
 	display: block;
+    overflow: hidden;
+    -webkit-overflow: hidden;
+    -moz-overflow: hidden;
 }
 
 #about {
@@ -225,6 +239,8 @@ a:link:active, a:visited:active {
 	top: 0;
 	bottom: 0;
 	pointer-events: none;
+    
+    overflow: hidden;
 
 	-webkit-transition: all 0.5s linear;
 	transition: all 0.5s linear;
@@ -239,6 +255,8 @@ a:link:active, a:visited:active {
 	text-transform: uppercase;
 	color: rgba(225, 225, 225, 0.8);
 	text-shadow: 1px 1px 2px rgba(50, 50, 50, 0.1);
+    
+    overflow: hidden;
 
 	-webkit-filter: blur(5px);
 	filter: blur(5px);
