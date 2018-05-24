@@ -257,6 +257,12 @@ h3 {
 	background-repeat: no-repeat;
 }
 
+#p08 {
+    background: url("../media/aa_2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 
 @media only screen and (min-width: 875px) {
 	.portfolio-projects {
