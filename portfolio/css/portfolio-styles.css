@@ -18,6 +18,16 @@
 	flex-wrap: nowrap;
 }
 
+.project-body a {
+    text-decoration: underline;
+	color: black;
+}
+
+.project-body a:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px #99999925;
+}
+
 .portfolio-categories {
 	width: 300px;
 	margin: 0 10px 0 0;

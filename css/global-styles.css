@@ -67,6 +67,10 @@ a:link:active, a:visited:active {
 	text-decoration: underline;
 }
 
+.project-body a {
+    color: rgb(0, 107, 179);
+}
+
 /*place contect exactly in the center of a div*/
 .centered {
 	left: 50%;
