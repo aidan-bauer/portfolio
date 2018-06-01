@@ -272,8 +272,15 @@ h3 {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
 #p09 {
     background: url("../media/cc_3.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#p10 {
+    background: url("../media/immolation_1.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
