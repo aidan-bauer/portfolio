@@ -124,6 +124,12 @@ a:link:active, a:visited:active {
 	font-size: 0.7em;
 }
 
+@media only screen and (min-width: 875px) {
+    .header {
+		padding: 10px 50px;
+	}
+}
+
 .header a {
 	position: inherit;
 	min-width: 250px;
@@ -146,8 +152,20 @@ a:link:active, a:visited:active {
 	transition: all 0.5s;
 }
 
+@media only screen and (min-width: 875px) {
+    .header a {
+		margin: 0px -45px;
+	}
+}
+
 .header a:nth-of-type(even) {
 	margin: 0 0 0 0;
+}
+
+@media only screen and (min-width: 875px) {
+    .header a:nth-of-type(even) {
+		margin: 45px 0 0 0;
+	}
 }
 
 .header a:hover {
@@ -207,6 +225,24 @@ a:link:active, a:visited:active {
     -moz-overflow: auto;
 }
 
+@media only screen and (min-width: 1080px) {
+    .menu-row {
+		margin-top: -185px;
+	}
+
+	.menu-row:first-of-type {
+		margin-top: auto;
+	}
+
+	.menu-row:nth-of-type(2) .menu-item:nth-of-type(odd) {
+		margin: 0 120px 0 0;
+	}
+
+	.menu-row:nth-of-type(2) .menu-item:nth-of-type(even) {
+		margin: 0 0 0 120px;
+	}
+}
+
 .menu-item {
 	margin: auto;
 	background: rgb(0, 107, 179);
@@ -218,6 +254,12 @@ a:link:active, a:visited:active {
     overflow: hidden;
     -webkit-overflow: hidden;
     -moz-overflow: hidden;
+}
+
+@media only screen and (min-width: 1080px) {
+    .menu-item {
+		display: inline-block;
+	}
 }
 
 #about {
@@ -329,42 +371,4 @@ hr.separator-dotted {
 		75% 100%, 25% 100%, 0% 50%);
 	-webkit-clip-path: url("#clip-hexagon");
 	clip-path: url("#clip-hexagon");
-}
-
-/*resizing the icons on the main menu*/
-@media only screen and (min-width: 1080px) {
-	.menu-row {
-		margin-top: -185px;
-	}
-
-	.menu-row:first-of-type {
-		margin-top: auto;
-	}
-
-	.menu-item {
-		display: inline-block;
-	}
-
-	.menu-row:nth-of-type(2) .menu-item:nth-of-type(odd) {
-		margin: 0 120px 0 0;
-	}
-
-	.menu-row:nth-of-type(2) .menu-item:nth-of-type(even) {
-		margin: 0 0 0 120px;
-	}
-}
-
-/*resizing the icons the header menu*/
-@media only screen and (min-width: 875px) {
-	.header {
-		padding: 10px 50px;
-	}
-
-	.header a {
-		margin: 0px -45px;
-	}
-
-	.header a:nth-of-type(even) {
-		margin: 45px 0 0 0;
-	}
 }
