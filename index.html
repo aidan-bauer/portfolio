@@ -18,103 +18,69 @@
         
         <link rel="stylesheet" href="css/reset.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/global-styles.css">
 		<link rel="stylesheet" type="text/css" href="css/medium-device-styles.css">
 		<link rel="stylesheet" type="text/css" href="css/small-device-styles.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="js/main-menu.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				var menuItems = $(".menu-item");
-				var width = menuItems.width();
-				menuItems.height(width*0.8575);
-
-				$(".overlay-content").hover(function() {
-					console.log("hovered");
-				});
-			});
-		</script>
-
-		<style type="text/css">
-			@keyframes fadeInDown {
-				0% {
-					-webkit-transform: translate3d(0, -100%, 0);
-					transform: translate3d(0, -100%, 0);
-				}
-
-				100% {
-					-webkit-transform: none;
-					transform: none;
-				}
-			}
-
-			/*set the animations*/
-			.container {
-				-webkit-animation-name: fadeInDown;
-				animation-name: fadeInDown;
-				-webkit-animation-duration: 1s;
-				animation-duration: 1s;
-				-webkit-animation-fill-mode: both;
-				animation-fill-mode: both;
-			}
-
-			/*&.is-exiting {
-				.container {
-					animation-direction: alternate-reverse;
-				}
-			}*/
-		</style>
 	</head>
 	<body>
-		<!--<div id="main"></div>-->
 		<div class="container" id="main">
+			<div class="header">
+				<div class="title">
+					<h1>Aidan Bauer</h1>
+					<div class="divider medium"></div>
+					<h4>Programmer - Designer - Artist</h4>
+				</div>
+				<!-- twitter, facebook, instagram, github, itch.io, others as needed -->
+				<div class="social-links"></div>
+				<div class="menu">
+					<a href=""><h2>About</h2></a>
+					<a href=""><h2>Portfolio</h2></a>
+					<a href=""><h2>Contact</h2></a>
+				</div>
+			</div>
 			<div class="body">
-				<div class="menu-row">
-					<div class="menu-item hexagon">
-						<div class="header-content centered">
-							<p>The Portfolio and Selected Works</p>
-							<p>of</p>
-							<p>Aidan Bauer</p>
-						</div>
-					</div>
+				<div class="gallery">
+					<div class="gallery-slide"></div>
 				</div>
-				<!--end menu row 1-->
-				<div class="menu-row">
-					<a href="about/about.html" class="menu-item hexagon">
-						<div id="about" class="blurred"></div>
-						<div class="overlay">
-							<div class="overlay-content centered">About</div>
+				<div class = categories>
+					<a href="" class="category" data-cat="1">
+						<div id="games"></div>
+						<div class="category-content">
+							<h4>Games</h4>
 						</div>
 					</a>
-					<a href="portfolio/portfolio.html" id="portfolio" class="menu-item hexagon">
-						<div id="portfolio" class="blurred"></div>
-						<div class="overlay">
-							<div class="overlay-content centered">Portfolio</div>
+					<a href="" class="category" id="code" data-cat="2">
+						<div id="games"></div>
+						<div class="category-content">
+							<h4>Code</h4>
+						</div>
+					</a>
+					<a href="" class="category" id="design" data-cat="3">
+						<div id="games"></div>
+						<div class="category-content">
+							<h4>Design</h4>
+						</div>
+					</a>
+					<a href="" class="category" id="trad_art" data-cat="4">
+						<div id="games"></div>
+						<div class="category-content">
+							<h4>Traditional Art</h4>
+						</div>
+					</a>
+					<a href="" class="category" id="dig_art" data-cat="5">
+						<div id="games"></div>
+						<div class="category-content">
+							<h4>Digital Art</h4>
 						</div>
 					</a>
 				</div>
-				<!--end menu row 2-->
-				<div class="menu-row">
-					<a href="contact/contact.html" id="contact" class="menu-item hexagon">
-						<div id="contact" class="blurred"></div>
-						<div class="overlay">
-							<div class="overlay-content centered">Contact</div>
-						</div>
-					</a>
-				</div>
-				<!--end menu row 3-->
+			</div>
+			<div class="footer">
+				Designed and coded by Aidan Bauer. &copy; 2019 Aidan Bauer.
 			</div>
 		</div>
-
-		<svg class="clip-svg">
-			<defs>
-				<clipPath id="clip-hexagon" clipPathUnits="objectBoundingBox">
-					<polygon points="0.25 0, 0.75 0, 1.0 0.5, 0.75 1.0, 0.25 1.0, 0 0.5"/>
-				</clipPath>
-			</defs>
-		</svg>
-
-		<!--<script src="js/init_smooth.js"></script>-->
 	</body>
 </html>

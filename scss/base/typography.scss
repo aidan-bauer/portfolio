@@ -1,0 +1,28 @@
+//@include font-face("Roboto", "fonts/Roboto");
+//@include font-face("Raleway", "fonts/Raleway", bold, 700);
+
+body {
+    //@include font-face("Roboto", "fonts/Roboto");
+	font-family: 'Source Sans Pro', 'sans-serif';
+	font-size: 24px;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    //@include font-face("Raleway", "fonts/Raleway", bold, 700);
+    font-family: 'Raleway', 'sans-serif';
+    //font-weight: bold;
+	line-height: 1.5;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2.1em;
+}
+
+h3 {
+	font-size: 1.8em;
+}
