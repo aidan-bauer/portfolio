@@ -1,0 +1,63 @@
+//main menu buttons
+.menu {
+    display: flex;
+    justify-content: center;
+
+    a {
+        min-width: 250px;
+        @include centerText(2.1em);
+        padding: 15px 10px;
+        margin: 5px 0px;
+
+        color: $headerTextColor;
+        text-align: center;
+
+        h2 {
+            border: 1px solid transparent;
+            margin: 0;
+        }
+
+        &:hover {
+            color: darken($color: $headerTextColor, $amount: 30%);
+            text-decoration: none;
+        }
+    }
+}
+
+//category buttons (main menu and project page)
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .category {
+        background-color: $headerBG;
+        color: $headerTextColor;
+
+        @include centerText(200px);
+        min-width: 380px;
+        margin: 20px 20px;
+        text-align: center;
+
+        h4 {
+            @include centerText(200px);
+        }
+    }
+}
+
+//footer buttons for project pages
+.share-buttons {
+    div {
+        display: inline-block;
+        margin: 0px 5px;
+    }
+}
+
+.back-button {
+	text-align: left;
+}
+
+//my social media buttons
+//start w/placeholder and extend to all
+
+//generic button placeholder

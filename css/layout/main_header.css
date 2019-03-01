@@ -1,0 +1,8 @@
+.header {
+  margin: 0; }
+  .header .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+/*# sourceMappingURL=main_header.css.map */

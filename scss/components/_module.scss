@@ -1,6 +1,3 @@
-//components
-//similar to layout but focused on smaller components like sliders or loaders
-
-@import "variables.scss";
-@import "mixins.scss";
-@import "functions.scss";
+//contains standalone components used in layout
+@import "buttons.scss";
+@import "gallery.scss";

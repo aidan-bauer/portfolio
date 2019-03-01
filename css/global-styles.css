@@ -58,11 +58,11 @@ body {
 body {
   font-family: 'Source Sans Pro', 'sans-serif';
   font-size: 24px;
-  line-height: 1.5; }
+  line-height: 1.25; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', 'sans-serif';
-  line-height: 1.5; }
+  line-height: 1.25; }
 
 h1 {
   font-size: 2.5em; }
@@ -73,16 +73,8 @@ h2 {
 h3 {
   font-size: 1.8em; }
 
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  border: none; }
-
 body {
-  background: whitesmoke;
-  margin: 0;
-  padding: 0; }
+  background: whitesmoke; }
 
 a:link:hover {
   text-decoration: underline; }
@@ -92,81 +84,89 @@ a:link, a:visited {
   a:link:active, a:link:active, a:visited:active, a:visited:active {
     text-decoration: underline; }
 
-h2 {
-  border: 1px solid transparent;
-  margin: 0; }
+.header {
+  background: black;
+  color: whitesmoke; }
 
-.divider {
-  border: 2px solid whitesmoke; }
+.footer {
+  background: black;
+  color: whitesmoke;
+  height: 60px;
+  line-height: 60px; }
 
 .medium {
   width: 50%; }
 
+.divider {
+  border: 2px solid whitesmoke; }
+
+.menu {
+  display: flex;
+  justify-content: center; }
+  .menu a {
+    min-width: 250px;
+    height: 2.1em;
+    line-height: 2.1em;
+    padding: 15px 10px;
+    margin: 5px 0px;
+    color: whitesmoke;
+    text-align: center; }
+    .menu a h2 {
+      border: 1px solid transparent;
+      margin: 0; }
+    .menu a:hover {
+      color: darkgray;
+      text-decoration: none; }
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .categories .category {
+    background-color: black;
+    color: whitesmoke;
+    height: 200px;
+    line-height: 200px;
+    min-width: 380px;
+    margin: 20px 20px;
+    text-align: center; }
+    .categories .category h4 {
+      height: 200px;
+      line-height: 200px; }
+
+.share-buttons div {
+  display: inline-block;
+  margin: 0px 5px; }
+
+.back-button {
+  text-align: left; }
+
+.gallery {
+  width: 75%;
+  height: 350px;
+  margin: 15px auto;
+  background-color: gray; }
+
 .header {
-  background: black;
-  color: whitesmoke;
-  margin: 0;
-  padding: 15px 20px;
-  min-height: 100px;
-  font-size: 1em; }
+  margin: 0; }
   .header .title {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .header .menu {
-    display: flex;
-    justify-content: center; }
-    .header .menu a {
-      min-width: 250px;
-      height: 50px;
-      line-height: 50px;
-      padding: 15px 10px;
-      margin: 5px 0px;
-      color: whitesmoke;
-      text-decoration: none;
-      text-align: center; }
-      .header .menu a:hover {
-        color: darkgray; }
-
-.body {
-  margin: 20px 0; }
-  .body .gallery {
-    width: 75%;
-    height: 350px;
-    margin: 15px auto;
-    background-color: gray; }
-  .body .categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .body .categories .category {
-      background-color: black;
-      color: whitesmoke;
-      height: 200px;
-      line-height: 200px;
-      min-width: 350px;
-      margin: 20px 40px;
-      text-align: center; }
-      .body .categories .category h4 {
-        height: 200px;
-        line-height: 200px; }
 
 .footer {
-  background: black;
   margin: auto;
   margin-top: 20px;
   width: 100%;
   bottom: 0;
-  height: 60px;
-  line-height: 60px;
-  color: whitesmoke;
   text-align: center;
   position: relative; }
-  .footer .share-buttons div {
-    display: inline-block;
-    margin: 0px 5px; }
 
-.back-button {
-  text-align: left; }
+/*@import "base/module";
+@import "utils/_module";
+@import "themes/module";
+@import "components/module";
+@import "layout/module";
+@import "pages/module";*/
 
 /*# sourceMappingURL=global-styles.css.map */

@@ -1,0 +1,46 @@
+body {
+	background: $headerTextColor;
+}
+
+a {
+    &:link {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    &:link, &:visited {
+        text-decoration: none;
+        color: black;
+
+        &:active, &:active {
+            text-decoration: underline;
+        }
+    }
+}
+
+.header {
+    background: $headerBG;
+    color: $headerTextColor;
+}
+
+//add menu button color
+
+.body {
+    //add category button color
+    //also in time add button images and gifs
+}
+
+.footer {
+    background: $headerBG;
+    color: $headerTextColor;
+    @include centerText(60px);
+}
+
+.medium {
+    width: 50%;
+}
+
+.divider {
+    border: 2px solid $headerTextColor;
+}
